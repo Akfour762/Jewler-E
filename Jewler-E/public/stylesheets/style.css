@@ -8,7 +8,7 @@ a {
 }
 h1{
 	font-family: Arial, sans-serif;
-	color: blue;
+	color: cyan;
 	}
 	
 img {
@@ -43,11 +43,11 @@ li a{
 }
 
 li a:hover:not(.active){
-	background-color: #ddd;
+	background-color: #FFFFFF;
 }
 
 li a.active{
-	color:whitebackground-color: #4CAF50;
+	color:whitebackground-color: #FFFFFF;
 }
 
 	

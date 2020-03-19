@@ -1,0 +1,90 @@
+CREATE TABLE supplier (
+	supplier_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	companyname VARCHAR(50) NOT NULL,
+	pointofcontact VARCHAR(50) NOT NULL,
+	website VARCHAR(50) NOT NULL,
+	phone VARCHAR(20) NOT NULL
+	);
+
+
+insert into customer (firstname, lastname, email, phone, address1, address2, 
+city, state, zip, addlnotes, rewardpoints) values ('Sohil', 'Masih',
+ 'masihsohil@gmail.com', '7738371561', '608 West Hillside Drive', 'Suite 58', 'Round Lake',
+ 'IL', '60073', 'Sohil hoops for real', 4762);
+ 
+ 
+ 
+ insert into customer (firstname, lastname, email, phone, address1, address2, 
+city, state, zip, addlnotes, rewardpoints) values ('Curtis', 'Jackson',
+ 'CJ@gmail.com', '224-475-9876', '40 South Washington', 'Suite 22', 'South Bend',
+ 'IN', '46556', 'Only buys 24k', 105);
+ 
+ 
+ 
+ 
+ insert into customer (firstname, lastname, email, phone, address1, address2, 
+city, state, zip, addlnotes, rewardpoints) values ('Nelly', 'Jared',
+ 'Nell@gmail.com', '773-111-9999', '101 Fairfield Rd', 'Suite 36', 'Chicago',
+ 'IL', '60007', 'Requires box with her jewelry', 608);
+ 
+ 
+ 
+ insert into customer (firstname, lastname, email, phone, address1, address2, 
+city, state, zip, addlnotes, rewardpoints) values ('Robert', 'Callaway',
+ 'RobCall@gmail.com', '213-919-4591', '101 W. Bellwood', 'Suite 11', 'Los Angeles',
+ 'CA', '90001', 'Product to be delivered at guest house', 561);
+ 
+ 
+ insert into customer (firstname, lastname, email, phone, address1, address2, 
+city, state, zip, addlnotes, rewardpoints) values ('Layla', 'Cage',
+ 'Layge@gmail.com', '629-787-3773', '45 Tribeca Ave', 'Apartment 4C', 'New York',
+ 'NY', '10001', 'Requests that package is placed in a bag', 99);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ INSERT INTO supplier(companyname, pointofcontact, website, phone) values ("The Welman Group", "George Welman", "www.wholesalesterling.com", "888-333-0870");
+INSERT INTO supplier(companyname, pointofcontact, website, phone) values ("Ruby Imports", "Melinda Strife", "www.rubyimports.net", "901-375-4377");
+INSERT INTO supplier(companyname, pointofcontact, website, phone) values ("Jewelry Max", "Mark Jackson", "www.jewelrymax.net", "714-988-0330");
+INSERT INTO supplier(companyname, pointofcontact, website, phone) values ("Stuller", "Wally Warburton", "www.Stuller.com", "800-877-7777");
+INSERT INTO supplier(companyname, pointofcontact, website, phone) values ("US Jewelry House", "Eduardo Ramirez", "www.usjewelryhouse.com", "646-661-5671");
+
+
+INSERT INTO category(categoryname, description) values ("Rings", "For yourself, or that special someone");
+INSERT INTO category(categoryname, description) values ("Chains", "Freeze your neck with some of our coldest ice");
+INSERT INTO category(categoryname, description) values ("Bracelets", "Wrap your arm in style");
+INSERT INTO category(categoryname, description) values ("Earrings", "You can hear the quality");
+INSERT INTO category(categoryname, description) values ("Watches", "Check the time and look good while doing it");
+
+
+INSERT INTO product (productname, productimage, description, category_id, supplier_id, subcategory_1, subcategory_2, status, saleprice, purchaseprice, qtyonhand, reorderpoint, reorderqty) VALUES ("Product 1", "prod1.png", "Product 1 Description", 1, 1, "SubCat1", "SubCat2", "Available", 50.00, 25.00, 50, 10, 30);
+INSERT INTO product (productname, productimage, description, category_id, supplier_id, subcategory_1, subcategory_2, status, saleprice, purchaseprice, qtyonhand, reorderpoint, reorderqty) VALUES ("Product 2", "prod2.png", "Product 2 Description", 2, 2, "SubCat1", "SubCat2", "Available", 50.00, 25.00, 50, 10, 30);
+INSERT INTO product (productname, productimage, description, category_id, supplier_id, subcategory_1, subcategory_2, status, saleprice, purchaseprice, qtyonhand, reorderpoint, reorderqty) VALUES ("Product 3", "prod3.png", "Product 3 Description", 3, 3, "SubCat1", "SubCat2", "Available", 50.00, 25.00, 50, 10, 30);
+INSERT INTO product (productname, productimage, description, category_id, supplier_id, subcategory_1, subcategory_2, status, saleprice, purchaseprice, qtyonhand,reorderpoint, reorderqty) VALUES ("Product 4", "prod4.png", "Product 4 Description", 4, 4, "SubCat1", "SubCat2", "Available", 50.00, 25.00, 50, 10, 30);
+INSERT INTO product (productname, productimage, description, category_id, supplier_id, subcategory_1, subcategory_2, status, saleprice, purchaseprice, qtyonhand,reorderpoint, reorderqty) VALUES ("Product 5", "prod5.png", "Product 5 Description", 5, 5, "SubCat1", "SubCat2", "Available", 50.00, 25.00, 50, 10, 30);
+
+
+
+
+INSERT INTO saleorder (saledate, salenotes) VALUES ( "1-20-2020", 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
