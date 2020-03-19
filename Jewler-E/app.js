@@ -5,6 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var layouts = require('express-ejs-layouts');
 const mariadb = require('mariadb/callback');
+const session = require('express-session');
+
+
+const cart = [];
+global.cart = cart;
 
 const db = mariadb.createConnection ({host: 'eagle.cdm.depaul.edu', user: 'smasih', password: 'smasih', database: 'jewelE'});
 
@@ -29,8 +34,14 @@ var contactRouter = require('./routes/contact');
 var dynaRouter = require('./routes/dyna');
 var productRouter = require('./routes/product');
 var categoryRouter = require('./routes/category');
+var catalogRouter = require('./routes/catalog');
+var customerRouter = require('./routes/customer');
+
 
 var app = express();
+
+app.use(session({secret: 'Jewler-ESecret'}));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -50,6 +61,10 @@ app.use('/contact', contactRouter);
 app.use('/dyna', dynaRouter); 
 app.use('/product', productRouter);
 app.use('/category', categoryRouter);
+app.use('/catalog', catalogRouter);
+app.use('/customer', customerRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

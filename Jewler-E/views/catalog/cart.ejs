@@ -1,0 +1,18 @@
+<% if (cartitems != '0') {%>
+<p> Here products selected in your cart: </p>
+	<table border=1>
+		<tr>
+			<th>Product</th>
+			<th>Price</th>
+			<th>Action</th>
+      	<% cartitems.forEach((item, index) => { %>
+			<tr>
+				<td><%= item.productname %></td>
+				<td><%= item.saleprice %></td>
+				<td><a href='/catalog/<%= index %>/remove'> Remove From Cart</a></td>
+           		 </tr>
+        <% }); %>
+	</table>
+<% } else { %>
+        <p>Cart Is Empty</p>
+<% } %>
