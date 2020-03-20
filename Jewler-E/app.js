@@ -8,8 +8,7 @@ const mariadb = require('mariadb/callback');
 const session = require('express-session');
 
 
-const cart = [];
-global.cart = cart;
+
 
 const db = mariadb.createConnection ({host: 'eagle.cdm.depaul.edu', user: 'smasih', password: 'smasih', database: 'jewelE'});
 
